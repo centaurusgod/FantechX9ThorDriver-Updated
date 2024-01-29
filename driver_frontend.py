@@ -150,7 +150,9 @@ class driver_frontend(Gtk.Window, driver_api):
         self.action_bar.pack_end(self.save_button)
 
     def startup(self):
+        print("Before find")
         self.find_device()
+        print("After find")
         state = self.device_state()
         alert = Gtk.MessageDialog()
         alert.add_button("Close", Gtk.ResponseType.CLOSE)

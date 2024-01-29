@@ -5,7 +5,7 @@ import usb.util
 class Driver(object):
     def __init__(self):
         self.x9_vendorid = 0x18f8  # vendorid
-        self.x9_productid = 0x0fc0  # productid
+        self.x9_productid = 0x0fc0 # productid
         self.bmRequestType = 0x21  # bmRequestType
         self.bRequest = 0x09  # bRequest
         self.wValue = 0x0307  # wValue
@@ -181,7 +181,7 @@ class Driver_API(Driver):
     '''The sole purpose of this class is to give the frontend access to the Driver
     class. Unless present the super().__init__ call defaults to the Gtk.Wondow
     class according to the MRO'''
-    def __init__():
+    def __init__(self):
         super().__init__()
 
 
