@@ -25,6 +25,22 @@ Run the file called driver_frontend.py using python
 
 `python driver_frontend.py`
 
+## Extremly Important
+## Get your vendorid & productid using lsusb
+```bash
+lsusb
+```
+## Output
+![lsusb_output](https://i.ibb.co/r07MqfK/image.png)
+- As you can see I have the following output:
+  ```bash
+  Bus 001 Device 008: ID 18f8:0fc0 [Maxxter] USB GAMING MOUSE
+  18f8 is the vendorid & 0fc0 is the product id
+  ```
+- You need to copy your vendor id and product id and replace those values in the driver_backend.py file.
+- See the following Image for reference.
+  ![id_replacement](https://i.ibb.co/p4tJc39/image.png)
+- You might need to modify the udev rule provided below, starting with `echo "SUB` according to the vendorid and produtid output.
 ## On a side note:
 Since python needs access to the usb device, it might require appropriate UDEV rules to be set up ([see here](https://wiki.archlinux.org/index.php/udev#Accessing_firmware_programmers_and_USB_virtual_comm_devices)) or the program may need to be run as root (absolutely not recommended).
 
@@ -49,21 +65,7 @@ Since the project is written in python you can simply download the 2 files (driv
 
 The current configuration you have set will be saved when the `save configuration` button is pressed, in a file called **driver.conf** in the same folder the program is run from.
 
-## Extremly Important
-## Get your vendorid & productid using lsusb
-```bash
-lsusb
-```
-## Output
-![lsusb_output](https://i.ibb.co/r07MqfK/image.png)
-- As you can see I have the following output:
-  ```bash
-  Bus 001 Device 008: ID 18f8:0fc0 [Maxxter] USB GAMING MOUSE
-  18f8 is the vendorid & 0fc0 is the product id
-  ```
-- You need to copy your vendor id and product id and replace those values in the driver_backend.py file.
-- See the following Image for reference.
-  ![id_replacement](https://i.ibb.co/p4tJc39/image.png)
+
 
 #### It should look similar to this (depends on gtk theme):
 
