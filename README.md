@@ -34,16 +34,16 @@ sudo cp mouse /usr/bin/
 * `mouse -c color_name`: Sets the LED color to `color_name`.
 * `mouse -d dpi`: Sets the DPI to `dpi`.
 * `mouse -c color_name -d dpi`: Sets the LED color to `color_name` and the DPI to `dpi`.
-
+* Example(all small letter): `mouse -c red`
 **Supported Colors**
 
-* Yellow
-* Blue
-* Violet
-* Green
-* Red
-* Cyan
-* White
+* yellow
+* blue
+* violet
+* green
+* red
+* cyan
+* white
 
 **Supported DPIs**
 
