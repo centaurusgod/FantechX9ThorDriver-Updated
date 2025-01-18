@@ -19,14 +19,15 @@ cd fantech_x9_thor_linux_driver_updated
 3. Make the `mouse` script executable:
 
 ```bash
-chmod +x mouse
+chmod +x install.sh
 ```
 
-4. Copy the `mouse` script to `/usr/bin/` with sudo permissions:
+4. Run the installer
 
 ```bash
-sudo cp mouse /usr/bin/
+./install.sh
 ```
+5. Reboot
 
 **Usage**
 
